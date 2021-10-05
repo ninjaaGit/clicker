@@ -1,0 +1,55 @@
+.item{
+    &-container{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: fit-content;
+        padding: .2rem .7rem;
+        justify-content: space-between;
+        margin: .5rem 0;
+        border-radius: .7rem;
+        border: solid 2px #FFF;
+        cursor: pointer;
+        background-color: #008000;
+
+        &:active{
+            transform: scale(.95);
+        }
+    }
+
+    &-svg{
+        width: 1rem;
+        min-width: 1rem;
+        height: 1rem;
+        min-height: 1rem;
+        fill: $theme;
+        margin: auto .5rem;
+    }
+
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    &-price-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    &-name{
+        font-size: 2rem;
+        
+    }
+
+    &-counter{
+        align-self: center;
+        width: fit-content;
+        height: fit-content;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}

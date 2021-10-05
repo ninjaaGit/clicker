@@ -1,10 +1,86 @@
-.home-container{
+.home-page{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
     width: 100%;
+    color: $themeS
 }
 
-.counter-text{
-    user-select: none;
+.clicker{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-counter{
+        text-align: center;
+        width: 100%;
+        max-width: 80%;
+        text-overflow: ellipsis;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    &-svg{
+        width: 30rem;
+        min-width: 30rem;
+        height: 30rem;
+        min-height: 30rem;
+        cursor: pointer;
+    
+        &:active{
+            transform: scale(.9);
+        }
+    }
+    
 }
+
+.items{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+        padding: 0 .5rem;
+        background-color: #00000050;
+        backdrop-filter: blur(3px);
+        box-shadow: 10px 0px 35px #000000;
+        animation: slide-right 1s;
+    }
+
+    &-title{
+        font-size: 3rem;
+        width: fit-content;
+    }
+
+    &-header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-svg{
+        width: 2rem;
+        min-width: 2rem;
+        height: 2rem;
+        min-height: 2rem;
+        cursor: pointer;
+        
+        &:hover{
+            transform: scale(1.1)
+        }
+
+        &:active{
+            transform: scale(.9)
+        }
+    }
+}
+
+
+
