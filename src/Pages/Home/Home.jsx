@@ -11,7 +11,7 @@ function Home(){
         localStorage.setItem('clicks', 0)
     }
 
-    function add(){
+    function click(){
         setClicks(Number(clicks) + 1)
         localStorage.setItem('clicks', clicks)
     }
@@ -45,7 +45,7 @@ function Home(){
             </div>
             <div className="clicker-container">
                 <p className="clicker-counter">{clicks} clicks</p>
-                <ClickerSVG onClick={add} className="clicker-svg"/>
+                <ClickerSVG onClick={click} className="clicker-svg"/>
             </div>
         </div>
     );
